@@ -148,20 +148,20 @@ namespace İşlem_programı
             {
                 Loglama.WriteLine("Tek Sayılar:\n" 
                     + tekYazma(baslangic, bitis) 
-                    +("Tek sayı Toplama: "+islem(islemTuru.eTekToplama, baslangic, bitis).ToString()) 
-                    +("Tek sayı çarpma: " + islem(islemTuru.eTekCarpma, baslangic, bitis).ToString()));
+                    +("\nTek sayı Toplama:\n "+islem(islemTuru.eTekToplama, baslangic, bitis).ToString()) 
+                    +("\nTek sayı çarpma:\n " + islem(islemTuru.eTekCarpma, baslangic, bitis).ToString()));
                 Loglama.Close();
             }
             else if (tbcIşlemler.SelectedIndex == 1)
             {
-                Loglama.WriteLine("Tek Sayılar:\n" + ciftYazma(baslangic, bitis) +
-                lsvCiftSayilar.Items.Add("Çift Sayı Toplama: " + islem(islemTuru.eCiftToplama, baslangic, bitis).ToString()) +
-                lsvCiftSayilar.Items.Add("çift sayı çarpma: " + islem(islemTuru.eCiftCarpma, baslangic, bitis).ToString()));
+                Loglama.WriteLine("Çift Sayılar:\n" + ciftYazma(baslangic, bitis) +
+                lsvCiftSayilar.Items.Add("\nÇift Sayı Toplama: \n" + islem(islemTuru.eCiftToplama, baslangic, bitis).ToString()) +
+                lsvCiftSayilar.Items.Add("\nçift sayı çarpma:\n " + islem(islemTuru.eCiftCarpma, baslangic, bitis).ToString()));
                 Loglama.Close();
             }
             else if (tbcIşlemler.SelectedIndex == 2)
             {
-                Loglama.WriteLine("Asal Sayılar: " + asalSayilar(baslangic,bitis));
+                Loglama.WriteLine("\nAsal Sayılar:\n " + asalSayilar(baslangic,bitis));
                 Loglama.Close();
             }
             else if (tbcIşlemler.SelectedIndex == 3)
